@@ -7,3 +7,4 @@
 # here we use -e in server after pull while executing like (command -e "NAME=prudvi raj GRETTING=Morning"
 #example:
 #command=ansible-playbook -i inventory.ini -e ansible_useec2-user -e ansible_password=DevOps321 filename -e "NAME=RAJ GREETING=Morning"
+# -e is arg here
