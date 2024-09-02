@@ -1,4 +1,6 @@
 - name: variables to print
   hosts: web
   tasks:
-    msg: "Hi, iam working as devops engineer, Duration is: 120HRS, company: hcl pvt ltd"
+  - name: print the information
+    ansible.builtin.debug
+      msg: "Hi, iam working as devops engineer, Duration is: 120HRS, company: hcl pvt ltd"
