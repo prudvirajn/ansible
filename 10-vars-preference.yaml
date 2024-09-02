@@ -26,3 +26,9 @@
 # it gives 1st preference what we execute after pull we can run in our prefer like(command -e "'......'"
 #1.commands/args
 #2.task level
+#3. files
+#4. prompt
+#5. play
+#6. inventory
+#7. Roles
+
