@@ -3,13 +3,13 @@
   vars_prompt:
   - name: COURSE
     prompt: course name
-    private: false 
+   # private: false (if you want to show the data enterning in the server)
   - name: TRAINER
     prompt: Trainer name
-    private: false
+   ## private: false  (if you want to show the data enterning in the server) 
   - name: DURATION
     prompt: Duration
-    private: false
+    #private: false (if you want to show the data enterning in the server)
   tasks:
   - name: print the information
     ansible.builtin.debug:
