@@ -1,0 +1,7 @@
+- name: variables to print
+  hosts: web  
+  tasks:
+  - name: print the information
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
+# here ansible automatically verify the files in inventory.ini has we saved vars_files      
