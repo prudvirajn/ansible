@@ -1,0 +1,28 @@
+- name: variables to print
+  hosts: web
+  vars:
+    COURSE: "DevOps with AWS from play level"
+    DURATION: "120HRS"
+    TRAINER: "Sivakumar Reddy M"
+  vars_prompt:
+  - name: COURSE
+    prompt: course name
+    # private: false (if you want to show the data enterning in the server)
+  - name: TRAINER
+    prompt: Trainer name
+    # private: false  (if you want to show the data enterning in the server) 
+  - name: DURATION
+    prompt: Duration
+    #private: false (if you want to show the data enterning in the server)
+  tasks:
+  - name: print the information
+    vars:
+      COURSE: "DevOps with AWS from task level"
+      DURATION: "120HRS"
+      TRAINER: "Sivakumar Reddy M"
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{COURSE}}"
+# here we can prefer all types of files in one time like vars,tasks,files,args,inventory,prompt
+# it gives 1st preference what we execute after pull we can run in our prefer like(command -e "'......'"
+#1.commands/args
+#2.task level
