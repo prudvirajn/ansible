@@ -3,10 +3,10 @@
   vars_prompt:
   - name: COURSE
     prompt: course name
-   # private: false (if you want to show the data enterning in the server)
+    # private: false (if you want to show the data enterning in the server)
   - name: TRAINER
     prompt: Trainer name
-   ## private: false  (if you want to show the data enterning in the server) 
+    # private: false  (if you want to show the data enterning in the server) 
   - name: DURATION
     prompt: Duration
     #private: false (if you want to show the data enterning in the server)
