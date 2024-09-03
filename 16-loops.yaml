@@ -1,0 +1,12 @@
+- name: loops
+  hosts: local
+  connection: local
+  tasks:
+  - name: print names
+    ansible.builtin,debug:
+      msg: "Hello {{ item }}" #here item is keyword/default word, it has resesved key
+    loop: # here we use loop because all names are come in one loop
+    - Ramesh
+    - Raheem
+    - Robert
+    - Rohit  
