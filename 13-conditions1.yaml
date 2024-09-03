@@ -6,7 +6,7 @@
     ansible.builtin.command: id expense
     register: USER # here user is a variable that gets output from above command
     ignore errors: true
-    
+
   - name: print the user information
     ansible.builtin.debug:
       msg: "user info: {{ USER }}"
