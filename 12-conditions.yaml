@@ -7,6 +7,7 @@
     private: false # not confidential
     #vars:
     # my_number:139 #number
+    #if u give above module you no need to use pipe command int consideration
   tasks:
   - name: print this if lessthan 10
     ansible.builtin.debug:
