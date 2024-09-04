@@ -1,7 +1,7 @@
 - name: demo on filters/functions
-  hosts: local
+  hosts: loxal
   connection: local
   tasks:
   - name: print the default variable
     ansible.builtin.debug:
-      msg: "Hello {{ course | default'(ansible)' }}"
+      msg: "Hello {{ course | default'(ansible)'' }}" 
